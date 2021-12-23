@@ -93,8 +93,8 @@ egret 的 MovieClip 采用工厂模式，MovieClip 工厂类为：
 一个 MovieClip 工厂类对应一个MC资源合集。比如资源文件为 `abc.json` 和 `abc.png`。那么我们就可以在程序中把其解析到一个 MovieClip 工厂类：
 
 ~~~ typescript
-var data = RES.getRes("abc.json");
-var txtr = RES.getRes("abc.png");
+var data = RES.getRes("abc_json");
+var txtr = RES.getRes("abc_png");
 var mcFactory:egret.MovieClipDataFactory = new egret.MovieClipDataFactory( data, txtr );
 ~~~
 
